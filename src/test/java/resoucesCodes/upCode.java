@@ -1,8 +1,11 @@
 package resoucesCodes;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -18,9 +21,14 @@ public class upCode {
 	
 	
 	public WebDriver driver;
-    public WebDriver  upBrowser() {
+    public WebDriver  upBrowser() throws IOException {
     	
-    	String browserName="chrome";
+    	Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream( System.getProperty("user.dir")+"\\src\\main\\java\\excessOtherCodes\\GolbalData.properties");
+		prop.load(fis);
+		 String browserName = System.getProperty("browser")!=null ? System.getProperty("browser"):prop.getProperty("browser");
+        prop.getProperty("browser");
+    	
     	
     	if(browserName.contains("chrome")) {
     		driver = new ChromeDriver();
@@ -46,7 +54,7 @@ public class upCode {
 		return System.getProperty("user.dir")+ "//reports//"+testCaseName + ".png";
 	}
     @BeforeMethod
-    public void upWebsite() {
+    public void upWebsite() throws IOException {
     	WebDriver driver=upBrowser();
         driver.get("http://localhost/opencart/");
     }
