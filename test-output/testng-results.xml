@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-16T21:51:20 IST" name="Default suite" finished-at="2024-04-16T21:51:23 IST" duration-ms="3365">
+    <groups>
+    </groups>
+    <test started-at="2024-04-16T21:51:20 IST" name="Default test" finished-at="2024-04-16T21:51:23 IST" duration-ms="3365">
+      <class name="OpenCart.main.loginFlow">
+        <test-method is-config="true" signature="upWebsite()[pri:0, instance:OpenCart.main.loginFlow@67c33749]" started-at="2024-04-16T21:51:20 IST" name="upWebsite" finished-at="2024-04-16T21:51:23 IST" duration-ms="2817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upWebsite -->
+        <test-method signature="loginTest()[pri:0, instance:OpenCart.main.loginFlow@67c33749]" started-at="2024-04-16T21:51:23 IST" name="loginTest" finished-at="2024-04-16T21:51:23 IST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeWeb()[pri:0, instance:OpenCart.main.loginFlow@67c33749]" started-at="2024-04-16T21:51:23 IST" name="closeWeb" finished-at="2024-04-16T21:51:23 IST" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWeb -->
+      </class> <!-- OpenCart.main.loginFlow -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
