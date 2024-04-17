@@ -30,7 +30,7 @@ public class endToEndFlow extends upCode {
 		
 		SpilitedLoginCodesOrRegisterCodes registerOrLogin = new SpilitedLoginCodesOrRegisterCodes(driver);
 
-		productPage productShowCase = registerOrLogin.LoginwithCredential("Vignesh@ngfot.com", "123456");
+		productPage productShowCase = registerOrLogin.LoginwithCredential("Vignesh@ngfot.com", "1234567");
 		productShowCase.wayToProductListedPage();
 		String[] productName = { "iPhone", "HTC Touch HD", "iPod Classic", "MacBook Air" };
 

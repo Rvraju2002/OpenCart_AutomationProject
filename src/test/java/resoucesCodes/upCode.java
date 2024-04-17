@@ -48,7 +48,7 @@ public class upCode {
     @BeforeMethod
     public void upWebsite() {
     	WebDriver driver=upBrowser();
-        driver.get("http://localhost/opencartpro/");
+        driver.get("http://localhost/opencart/");
     }
       @AfterMethod
       public void closeWeb() {
