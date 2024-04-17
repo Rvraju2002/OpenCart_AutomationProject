@@ -116,9 +116,10 @@ public class shippingPage extends reusableCodes {
 		confirmFlat.click();
 	}
 	
-	public void choosingPaymentMethod() {
+	public void choosingPaymentMethod() throws InterruptedException {
 		PaymentMethodButton.click();
 		ChoosePaymenthod.click();
+		threadSleep1000Seconds();
 		confirmPayment.click();
 	}
 	
