@@ -2,8 +2,14 @@ package OpenCart.spillitedCodes;
 
 import static org.testng.Assert.assertEquals;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -132,12 +138,15 @@ public class SpilitedLoginCodesOrRegisterCodes extends reusableCodes {
 		RegisterAnAccountlink();
 		customerFirstNameandLastName("Vignesh","testing");
 		String randomEmailGen=generateRandomEmail();
-		customerEmailandPassword(randomEmailGen,"12345678");
+		customerEmailandPassword(randomEmailGen,"1234567");
+		saveEmailAndPasswordToJson(randomEmailGen,"1234567");
 		privacyPolicyCheckbox();
 		registerDetailsSumbitButton();
 		successfullRegisterMessageCheck();
 		return new productPage(driver);
 	}
+	
+	
 	
 	public static String generateRandomEmail() {
         String[] names = {"john", "emma", "david", "sophia", "michael", "olivia", "william", "ava"};
@@ -147,6 +156,35 @@ public class SpilitedLoginCodesOrRegisterCodes extends reusableCodes {
         String domain = domains[random.nextInt(domains.length)];
         int randomNumber = random.nextInt(1000);
         return name + randomNumber + "@" + domain;
+        
+    }
+	
+	public static void saveEmailAndPasswordToJson(String email1, String password1) {
+		String filePath = System.getProperty("user.dir") + "\\src\\main\\java\\excessOtherCodes\\credential.json";
+		 JSONArray jsonArray = readJsonFile(filePath);
+		 JSONObject newEntry = new JSONObject();
+		 newEntry.put("email", email1);
+		 newEntry.put("password", password1);
+		 jsonArray.add(newEntry);
+        
+        
+        try (FileWriter fileWriter = new FileWriter(filePath)) {
+            fileWriter.write(jsonArray.toJSONString());
+            fileWriter.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+    }
+	
+	public static JSONArray readJsonFile(String filePath) {
+        try (FileReader fileReader = new FileReader(filePath)) {
+            JSONParser parser = new JSONParser();
+            return (JSONArray) parser.parse(fileReader);
+        } catch (IOException | org.json.simple.parser.ParseException e) {
+            e.printStackTrace();
+            return new JSONArray(); // Return empty JSONArray if file does not exist or parsing fails
+        }
     }
 	
 //register flow end

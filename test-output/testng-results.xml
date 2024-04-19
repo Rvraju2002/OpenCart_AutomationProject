@@ -2,24 +2,36 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-17T12:38:17 IST" name="Default suite" finished-at="2024-04-17T12:38:44 IST" duration-ms="26735">
+  <suite started-at="2024-04-19T20:04:50 IST" name="Default suite" finished-at="2024-04-19T20:04:56 IST" duration-ms="5944">
     <groups>
     </groups>
-    <test started-at="2024-04-17T12:38:17 IST" name="Default test" finished-at="2024-04-17T12:38:44 IST" duration-ms="26735">
-      <class name="OpenCart.main.endToEndFlow">
-        <test-method is-config="true" signature="upWebsite()[pri:0, instance:OpenCart.main.endToEndFlow@28f2a10f]" started-at="2024-04-17T12:38:17 IST" name="upWebsite" finished-at="2024-04-17T12:38:22 IST" duration-ms="4464" status="PASS">
+    <test started-at="2024-04-19T20:04:50 IST" name="Default test" finished-at="2024-04-19T20:04:56 IST" duration-ms="5944">
+      <class name="OpenCart.main.loginFlow">
+        <test-method is-config="true" signature="upWebsite()[pri:0, instance:OpenCart.main.loginFlow@35aea049]" started-at="2024-04-19T20:04:50 IST" name="upWebsite" finished-at="2024-04-19T20:04:53 IST" duration-ms="2840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- upWebsite -->
-        <test-method signature="fullTest()[pri:0, instance:OpenCart.main.endToEndFlow@28f2a10f]" started-at="2024-04-17T12:38:22 IST" name="fullTest" finished-at="2024-04-17T12:38:44 IST" duration-ms="22080" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:OpenCart.main.loginFlow@35aea049]" started-at="2024-04-19T20:04:53 IST" name="loginTest" data-provider="loginCredentials" finished-at="2024-04-19T20:04:56 IST" duration-ms="2905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[olivia174@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fullTest -->
-        <test-method is-config="true" signature="closeWeb()[pri:0, instance:OpenCart.main.endToEndFlow@28f2a10f]" started-at="2024-04-17T12:38:44 IST" name="closeWeb" finished-at="2024-04-17T12:38:44 IST" duration-ms="162" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeWeb()[pri:0, instance:OpenCart.main.loginFlow@35aea049]" started-at="2024-04-19T20:04:56 IST" name="closeWeb" finished-at="2024-04-19T20:04:56 IST" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWeb -->
-      </class> <!-- OpenCart.main.endToEndFlow -->
+      </class> <!-- OpenCart.main.loginFlow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -30,9 +30,9 @@ public class endToEndFlow extends upCode {
 		
 		SpilitedLoginCodesOrRegisterCodes registerOrLogin = new SpilitedLoginCodesOrRegisterCodes(driver);
 
-		productPage productShowCase = registerOrLogin.LoginwithCredential("Vignesh@ngfot.com", "1234567");
+		productPage productShowCase = registerOrLogin.Registrationflow();
 		productShowCase.wayToProductListedPage();
-		String[] productName = { "iPhone", "HTC Touch HD", "iPod Classic", "MacBook Air" };
+		String[] productName = { "iPhone", "HTC Touch HD", "iPod Classic", "MacBook Air" ,"Apple Cinema 30"};
 
 		List<String> productList = new ArrayList<>(Arrays.asList(productName));
 		List<WebElement> productsElements = productShowCase.gettingAllProductsElements();
