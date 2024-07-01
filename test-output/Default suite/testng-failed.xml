@@ -5,7 +5,7 @@
     <classes>
       <class name="OpenCart.main.endToEndFlow">
         <methods>
-          <include name="fullTest"/>
+          <include name="fullTest" invocation-numbers="0 1 2"/>
           <include name="closeWeb"/>
           <include name="upWebsite"/>
         </methods>

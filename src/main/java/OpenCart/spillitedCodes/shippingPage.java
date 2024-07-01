@@ -111,6 +111,7 @@ public class shippingPage extends reusableCodes {
 		bottomToUpScroll();
 		threadSleep1000Seconds();
 		shippingMethodFlat.click();
+		threadSleep1000Seconds();
 		choosingFlatDiscount.click();
 		threadSleep1000Seconds();
 		confirmFlat.click();
@@ -118,8 +119,9 @@ public class shippingPage extends reusableCodes {
 	
 	public void choosingPaymentMethod() throws InterruptedException {
 		PaymentMethodButton.click();
+		threadSleep3000Seconds();
 		ChoosePaymenthod.click();
-		threadSleep1000Seconds();
+		threadSleep3000Seconds();
 		confirmPayment.click();
 	}
 	

@@ -4,11 +4,11 @@
   <listeners>
     <listener class-name="resoucesCodes.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
       <class name="OpenCart.main.endToEndFlow">
         <methods>
-          <include name="fullTest"/>
+          <include name="fullTest" invocation-numbers="2"/>
           <include name="closeWeb"/>
           <include name="upWebsite"/>
         </methods>

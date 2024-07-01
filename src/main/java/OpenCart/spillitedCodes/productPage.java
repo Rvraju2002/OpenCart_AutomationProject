@@ -1,5 +1,6 @@
 package OpenCart.spillitedCodes;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -9,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import excessOtherCodes.reusableCodes;
 
@@ -33,7 +36,7 @@ public class productPage extends reusableCodes {
 	@FindBy(xpath="//div[@class='button-group']/button[1]")
 	List<WebElement> addCartButton;
 	
-	@FindBy(css="div[id='header-cart'] div")
+	@FindBy(css=".dropdown.d-grid")
 	WebElement gotoProductAddedPage;
 	public  void wayToProductListedPage() {
 		productsLinks.click();
@@ -60,7 +63,18 @@ public class productPage extends reusableCodes {
 	
 	public addedProdutPage goToaddedProductPage() throws InterruptedException {
 		bottomToUpScroll();
-		threadSleep3000Seconds();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 
+
+	        // Wait for the alert to be visible (with opacity > 0)
+	        WebElement alertElement = driver.findElement(By.cssSelector(".alert.alert-success.alert-dismissible"));
+	        
+
+	        // Wait for the alert to disappear (with opacity == 0 or element to be not present)
+	        wait.until(ExpectedConditions.or(
+	            ExpectedConditions.invisibilityOf(alertElement)
+	          
+	        ));
 		gotoProductAddedPage.click();
 		return new addedProdutPage(driver);
 	}

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-19T20:04:50 IST" name="Default suite" finished-at="2024-04-19T20:04:56 IST" duration-ms="5944">
+  <suite started-at="2024-07-01T17:05:46 IST" name="Suite" finished-at="2024-07-01T17:06:54 IST" duration-ms="67915">
     <groups>
     </groups>
-    <test started-at="2024-04-19T20:04:50 IST" name="Default test" finished-at="2024-04-19T20:04:56 IST" duration-ms="5944">
-      <class name="OpenCart.main.loginFlow">
-        <test-method is-config="true" signature="upWebsite()[pri:0, instance:OpenCart.main.loginFlow@35aea049]" started-at="2024-04-19T20:04:50 IST" name="upWebsite" finished-at="2024-04-19T20:04:53 IST" duration-ms="2840" status="PASS">
+    <test started-at="2024-07-01T17:05:46 IST" name="Test" finished-at="2024-07-01T17:06:54 IST" duration-ms="67915">
+      <class name="OpenCart.main.endToEndFlow">
+        <test-method is-config="true" signature="upWebsite()[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:05:46 IST" name="upWebsite" finished-at="2024-07-01T17:05:50 IST" duration-ms="3322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- upWebsite -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:OpenCart.main.loginFlow@35aea049]" started-at="2024-04-19T20:04:53 IST" name="loginTest" data-provider="loginCredentials" finished-at="2024-04-19T20:04:56 IST" duration-ms="2905" status="PASS">
+        <test-method signature="fullTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:05:50 IST" name="fullTest" data-provider="loginDetails" finished-at="2024-07-01T17:06:16 IST" duration-ms="26321" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[olivia174@gmail.com]]>
+                <![CDATA[ava470@hotmail.com]]>
               </value>
             </param>
             <param index="1">
@@ -23,15 +23,242 @@
                 <![CDATA[1234567]]>
               </value>
             </param>
+            <param index="2">
+              <value>
+                <![CDATA[iPhone,HTC Touch HD]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Gem]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Good]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[NorthStreet]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Virudhunagar]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[873837]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeWeb()[pri:0, instance:OpenCart.main.loginFlow@35aea049]" started-at="2024-04-19T20:04:56 IST" name="closeWeb" finished-at="2024-04-19T20:04:56 IST" duration-ms="157" status="PASS">
+        </test-method> <!-- fullTest -->
+        <test-method is-config="true" signature="closeWeb()[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:06:16 IST" name="closeWeb" finished-at="2024-07-01T17:06:16 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWeb -->
-      </class> <!-- OpenCart.main.loginFlow -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="upWebsite()[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:06:16 IST" name="upWebsite" finished-at="2024-07-01T17:06:18 IST" duration-ms="2124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upWebsite -->
+        <test-method signature="fullTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:06:18 IST" name="fullTest" data-provider="loginDetails" finished-at="2024-07-01T17:06:44 IST" duration-ms="25616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Joshva@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iPhone,HTC Touch HD]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Joshva]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Francis]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[West Street]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Theni]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[4857358]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullTest -->
+        <test-method is-config="true" signature="closeWeb()[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:06:44 IST" name="closeWeb" finished-at="2024-07-01T17:06:44 IST" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWeb -->
+        <test-method is-config="true" signature="upWebsite()[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:06:44 IST" name="upWebsite" finished-at="2024-07-01T17:06:46 IST" duration-ms="1746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- upWebsite -->
+        <test-method signature="fullTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:06:46 IST" name="fullTest" data-provider="loginDetails" finished-at="2024-07-01T17:06:53 IST" duration-ms="7687" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Vignesh@ngfot.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[iPhone,HTC Touch HD,iPod Classic,
+MacBook Air,Apple Cinema 30]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Parker]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Gell]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EastStreet]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Virudhunagar]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[23737]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e544c1bb8e592a51849e3246d304e75d, clickElement {id=f.D3E11CD4AF8CBB5D9580298D06771B43.d.92BE8A2464871FE4F0CD17975CD79421.e.121}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54063/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e544c1bb8e592a51849e3246d304e75d)] -> css selector: .dropdown.d-grid]
+Session ID: e544c1bb8e592a51849e3246d304e75d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e544c1bb8e592a51849e3246d304e75d, clickElement {id=f.D3E11CD4AF8CBB5D9580298D06771B43.d.92BE8A2464871FE4F0CD17975CD79421.e.121}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54063/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e544c1bb8e592a51849e3246d304e75d)] -> css selector: .dropdown.d-grid]
+Session ID: e544c1bb8e592a51849e3246d304e75d
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at OpenCart.spillitedCodes.productPage.goToaddedProductPage(productPage.java:78)
+at OpenCart.main.endToEndFlow.fullTest(endToEndFlow.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fullTest -->
+        <test-method is-config="true" signature="closeWeb()[pri:0, instance:OpenCart.main.endToEndFlow@79207381]" started-at="2024-07-01T17:06:53 IST" name="closeWeb" finished-at="2024-07-01T17:06:54 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWeb -->
+      </class> <!-- OpenCart.main.endToEndFlow -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

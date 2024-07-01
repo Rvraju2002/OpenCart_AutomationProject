@@ -1,6 +1,6 @@
 package OpenCart.spillitedCodes;
 
-import static org.testng.Assert.assertEquals;
+
 
 import java.io.FileReader;
 import java.io.FileWriter;
